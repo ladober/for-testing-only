@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form>
+      <h3>Choose what do you want to learn at first</h3>
+
+      <p>
+        <input type="checkbox" checked name="html5" />
+        <label>HTML5, CSS</label>
+      </p>
+
+      <p>
+        <input type="checkbox" name="js" />
+        <label> JavaScript</label>
+      </p>
+
+      <p>
+        <input type="checkbox" name="react" />
+        <label>React</label>
+      </p>
+
+      <h3>Choose time suitable for you</h3>
+
+      <p>
+        <input type="radio" name="time" value="morning" />
+        <label>09:00 - 11:00</label>
+      </p>
+      <p>
+        <input type="radio" name="time" value="dinner" />
+        <label>11:30 - 13:30</label>
+      </p>
+      <p>
+        <input type="radio" name="time" value="evening" />
+        <label>19:00 - 21:00</label>
+      </p>
+
+      <p>
+        <input type="color" name="favcolor" id="favcolor" />
+        <label for="favcolor">Color</label>
+      </p>
+    </form>
+
+    <form>
+      <fieldset>
+        <legend>selector Example</legend>
+
+        <p>
+          <label for="iphone">Choose to Buy</label>
+          <select name="iPhone" id="iphone">
+            <option disabled selected>Choose model</option>
+            <option value="11">iPhone 11</option>
+            <option value="12">iPhone 12</option>
+            <option value="13">iPhone 13</option>
+            <option value="14">iPhone 14</option>
+            <option value="15">iPhone 15</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="iphone">Choose model</label>
+          <select multiple name="iphone" id="iphone">
+            <option value="11">iPhone 11</option>
+            <option value="12">iPhone 12</option>
+            <option value="13">iPhone 13</option>
+            <option value="14">iPhone 14</option>
+            <option value="15">iPhone 15</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="iphone">Choose model</label>
+          <select name="iphone" id="iphone">
+            <optgroup label="iPhone old">
+              <option value="11">iPhone 11</option>
+              <option value="12">iPhone 12</option>
+            </optgroup>
+            <optgroup label="iPhone new">
+              <option value="13">iPhone 13</option>
+              <option value="14">iPhone 14</option>
+              <option value="15">iPhone 15</option>
+            </optgroup>
+          </select>
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
